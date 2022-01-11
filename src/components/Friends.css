@@ -1,0 +1,32 @@
+.friends__card{
+    display: flex;
+    justify-content: flex-start;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.friends__card_img {
+    display: flex;
+    width: fit-content;
+}
+.friends__card_icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;;
+}
+.friends__card__status {
+    position: relative;
+    top: 20px;
+    left: -14px;
+}
+.friends__card__status .MuiSvgIcon-root {
+    font-size: 15px;
+}
+.friends__card_name {
+    margin: auto 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.friends__card:hover {
+    background-color: #dadde1;
+    cursor: pointer;
+}

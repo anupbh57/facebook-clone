@@ -35,6 +35,8 @@
 }
 .sidebar__logo{
     height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 .ico__arrow .MuiSvgIcon-root{
     border-radius: 50%;

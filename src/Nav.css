@@ -86,7 +86,9 @@
     background:rgba(187, 187, 187, 0.364);
 }
 .user__logo {
-    height: 30px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 .nav__right .nav__user {
     width: 30%;

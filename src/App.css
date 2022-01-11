@@ -4,6 +4,10 @@
 }
 .main__content {
   display: flex;
-  background-color: #eff2f5;
   margin-top: 3.5rem;
+  height: fit-content
+}
+body{
+  background-color: #eff2f5;
+
 }
