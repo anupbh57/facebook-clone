@@ -1,3 +1,10 @@
 .content {
-    width: 60%;
+    width: 900px;
+    margin: 0 auto;
+}
+.story__deck{
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
 }
