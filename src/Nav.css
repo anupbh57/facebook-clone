@@ -11,6 +11,9 @@
     width: 99%;
     padding: .25rem;
     background-color: white;
+    position: fixed;
+    top: 0;
+    left:0;
 }
 .nav__left {
     display: flex;

@@ -1,0 +1,59 @@
+.ad__card {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+}
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 10px 0;
+}
+.card__top_left{
+    display: flex;
+    justify-content: flex-start;
+}
+.card__logo {
+    height: 25px;
+}
+.card__des{
+    margin: 0;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.card__des_t {
+    font-weight: 600;
+}
+.card__img {
+    border-radius: 10px;
+    margin: auto;
+    width: 99.5%;
+}
+.group__name {
+    margin: 5px 0;
+}
+.group__info {
+    margin: 0;
+    font-weight: 300;;
+}
+.ad__action_button {
+    display: block;
+    height: 35px;
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    background-color: #e3e6ea;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.ad__action_button:hover {
+    background-color: #d6d8da;
+    cursor: pointer;
+}
+.card__main:hover{
+    cursor: pointer;
+}
+.group__name {
+    cursor: pointer;
+}
