@@ -1,0 +1,112 @@
+.logo {
+    margin-top: 100px;
+    height: 40px;
+    margin: auto 5px;
+}
+.main {
+    background-color: rgb(92, 90, 90);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: .25rem;
+    background-color: white;
+}
+.nav__left {
+    display: flex;
+    width: 250px;
+    margin: auto 0;
+}
+.nav__left .MuiInput-root {
+    background-color: rgba(187, 187, 187, 0.22);
+    border-radius: 30px;
+    border-bottom: none;
+    height: 40px;
+    margin: auto;
+}
+
+.MuiInput-root:before {
+    border: none !important;
+}
+.nav__left .MuiSvgIcon-root {
+    border-left: 50px !important;
+}
+
+.nav__middle {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto !important;
+}
+.nav__middle .MuiSvgIcon-root {
+    color: rgb(92, 90, 90);
+    font-size:  20px;
+    margin: auto 5px;
+    font-weight: 400;
+}
+.nav__ico .MuiSvgIcon-root {
+    height:35px;
+    width: 100px;
+    padding: .2rem;
+}
+.nav__ico {
+    border-radius: 10px;
+
+}
+.active {
+    border-bottom: solid 3px #1b74e4;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.active .MuiSvgIcon-root {
+    color: #1b74e4;
+}
+.nav__ico:hover {
+    background: rgba(187, 187, 187, 0.22);
+    cursor: pointer;
+}
+.nav__right {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 0;
+}
+.nav__user{
+    border-radius: 30px;
+    margin: auto 0;
+    width: max-content;
+}
+.nav__user span {
+    font-weight: bold;
+}
+.nav__user:hover {
+    background:rgba(187, 187, 187, 0.364);
+}
+.user__logo {
+    height: 30px;
+}
+.nav__right .nav__user {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.nav__right .nav__user span {
+    margin: auto 5px;
+}
+.nav__right .nav__control_ico {
+    width: 230px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__right .nav__control_ico .MuiSvgIcon-root {
+    background: rgba(187, 187, 187, 0.364);
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+.nav__right .nav__control_ico .MuiSvgIcon-root:hover {
+    background: rgba(187, 187, 187, 0.541);
+    cursor: pointer;
+}
