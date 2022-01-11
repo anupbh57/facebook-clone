@@ -5,7 +5,6 @@ import userLogo from "./usericon.png";
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
-
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import TvOutlinedIcon from '@mui/icons-material/TvOutlined';
 import StorefrontIcon from '@mui/icons-material/Storefront';
@@ -16,7 +15,6 @@ import DialpadIcon from '@mui/icons-material/Dialpad';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import {Chat} from '@mui/icons-material';
 
 
 export default function Nav() {
@@ -24,7 +22,7 @@ export default function Nav() {
         <div className="nav">
             <div className='nav__left'>
                 <img src={logo}
-                    className='logo'></img>
+                    className='logo' alt = "Main Logo"></img>
                 <Input id="input-with-icon-adornment" placeholder='Search facebook'
                     startAdornment={
                         <InputAdornment
@@ -40,7 +38,7 @@ export default function Nav() {
             </div>
             <div className='nav__right'>
                 <div className='nav__user'>
-                    <img src={userLogo}
+                    <img src={userLogo} alt = "user Logo"
                         className='user_logo user__logo'></img>
                     <span>Anup</span>
                 </div>
