@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Content.css";
 import StoryCard, {AddStory} from "./components/StoryCard";
 import PostArea from "./components/PostArea";
 import Post from "./components/Post";
+import db from "./FirebaseImport";
 
 import userPic from "./usericon.png"
 import story1 from "./images/story/story1.jpg";
@@ -20,6 +21,16 @@ import user5 from "./images/profile/005.jpeg"
 import post1 from "./images/post001.jpeg";
 
 export default function Content() {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        db.collection('1').onSnapshot((snapshot) => 
+            setPosts(snapshot.docs.map((doc) => ({id: doc.id, data: doc.data() } )))
+        );
+    }, []);
+
+{posts.map(post => (<Post name = {post.data.posterName} img = {post.data.posterImg}/>))}
+
     return (
         <div className="content">
             <div className="story__deck">
@@ -44,9 +55,8 @@ export default function Content() {
                 <PostArea/>
             </div>
             <div className="posts">
-                <Post name = "Steve Dodson" img = {user1} postimg = {post1} comments = "26" shares = "3" likes = "256" loggedinuser = {userPic}/>
-                <Post name = "Steve Dodson" img = {user1} postimg = {post1} comments = "26" shares = "3" likes = "256" loggedinuser = {userPic}/>
-                <Post name = "Steve Dodson" img = {user1} postimg = {post1} comments = "26" shares = "3" likes = "256" loggedinuser = {userPic}/>
+            {posts.map(post => (<Post name = {post.data.posterName} img = {post.data.posterImg} text = {post.data.postText} postimg = {post.data.postImg} comments = {post.data.comments} shares = {post.data.shares} likes = {post.data.likes} loggedinuser = {userPic} date = {new Date(post.data.postedtime?.toDate()).toUTCString()}/>))}
+                
             </div>
         </div>
     )

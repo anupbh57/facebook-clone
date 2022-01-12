@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Post.css";
+import * as firebase from "firebase/app"
+import db from "../FirebaseImport";
 
 import PublicRoundedIcon from '@mui/icons-material/PublicRounded';
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
@@ -9,8 +11,9 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 
-
+var pImage = null;
 export default function Post(props) {
+    props.postimg ? pImage = "post__img" : pImage = "post__img_nodisplay";
     return (
         <div className="post">
             <div className="post__header">
@@ -25,7 +28,7 @@ export default function Post(props) {
                             {
                             props.name
                         }</div>
-                        <div className="post__poster_time">13h
+                        <div className="post__poster_time">{props.date}
                             <span>
                                 &nbsp; ·
                             </span>
@@ -37,9 +40,9 @@ export default function Post(props) {
             </div>
             <div className="post__content">
                 <div className="post__text">
-                    Here we go! This is my first post. Go easy on me.
+                    {props.text}
                 </div>
-                <img className="post__img"
+                <img className={pImage}
                     src={
                         props.postimg
                     }/>
@@ -56,7 +59,7 @@ export default function Post(props) {
                         props.comments
                     }
                         &nbsp;Comments</span>
-                    <span>{
+                    <span class = "post__stats_commentspan">{
                         props.shares
                     }
                         &nbsp;Shares</span>

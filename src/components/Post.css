@@ -48,6 +48,9 @@
     object-fit: cover;
     overflow: hidden;
 }
+.post__img_nodisplay {
+    display: none;
+}
 .post__stats {
     width: 97%;
     padding: .5rem;
@@ -69,8 +72,8 @@
 }
 .post__stats_right {
     display: flex;
-    width: 160px;
-    justify-content: space-between;
+    width: 180px;
+    justify-content: space-evenly;
 }
 
 
@@ -116,4 +119,7 @@
 
 .post__util {
     height: 3px;;
+}
+.post__stats_commentspan {
+    margin-left: 10px;
 }
