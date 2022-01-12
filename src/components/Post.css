@@ -1,0 +1,119 @@
+.post {
+    background: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    color: #88898d;
+    padding: .5rem 1rem;
+}
+.post__poster_icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;;
+}
+.post__header_left {
+    display: flex;
+}
+.post__poster_info {
+    margin-left: 10px;
+}
+.post__poster_name {
+    font-size: 18px;
+    color:rgb(46, 46, 46);
+    font-weight: 600;
+}
+.post__poster_time {
+    display: flex;
+    
+}
+.post__poster_time span .MuiSvgIcon-root{
+    font-size: 16px;
+    margin: 2px 0 0 5px;
+}
+
+.post__content {
+    max-height: 800px;
+    max-width: 900px;
+}
+.post__text{
+    margin: 1rem 0;
+    padding:0 1rem;
+}
+.post__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.post__stats {
+    width: 97%;
+    padding: .5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #cdd0d4;
+}
+.post__stats_left {
+    display: flex;
+    color: #6f7276;
+}
+.post__stats_left .MuiSvgIcon-root {
+    color: #13a0f9;
+}
+.post__stats_left span {
+    margin-left: 5px;
+    font-size: 17px;
+}
+.post__stats_right {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+
+.post__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin:10px auto;
+    width: 97%;
+}
+.post__action {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #6f7276;
+    padding: .5rem;
+    border-radius: 10px;
+    width: 25%;
+}
+.post__action:hover {
+    background: #eff2f5;
+    cursor: pointer;
+}
+.post__action div {
+    margin: auto 8px;
+}
+.post__action .MuiSvgIcon-root{
+    font-size: 20px;
+}
+.post__usericon {
+    display: flex;
+}
+.post__usericon_ico {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+.post__usericon .MuiSvgIcon-root {
+    font-size: 16px;
+    margin: auto;
+}
+
+.post__util {
+    height: 3px;;
+}

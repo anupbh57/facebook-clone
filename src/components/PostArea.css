@@ -6,6 +6,9 @@
 .postarea__top {
     display: flex;
     width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px;
+    border-color: rgba(128, 128, 128, 0.253);
 }
 .postarea__user_icon {
     height: 45px;
@@ -19,8 +22,45 @@
     border: none;
     border-radius: 20px;
     background: #eff2f5;
+    font-size: 20px;
+    padding-left: 10px;;
 }
 .postarea__form::-webkit-input-placeholder {
     font-size: 22px;
-    margin-right: 10px;
+}
+.postarea__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.postarea__action {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #6f7276;
+    padding: .5rem;
+    border-radius: 10px;
+    width: 33%;
+}
+.postarea__action:hover {
+    background: #eff2f5;
+    cursor: pointer;
+}
+.postarea__action div {
+    margin: auto 8px;
+}
+.postarea__action .MuiSvgIcon-root{
+    font-size: 35px;
+}
+
+.postarea__ico_live {
+    color:rgb(243 66 94);
+}
+.postarea__ico_photo {
+    color:rgb(68 189 98);
+}
+.postarea__ico_feeling {
+    color:rgb(247 185 39);
 }

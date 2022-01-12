@@ -1,6 +1,7 @@
 .content {
     width: 900px;
     margin: 0 auto;
+    padding: 1rem
 }
 .story__deck{
     max-width: 900px;
