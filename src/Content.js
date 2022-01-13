@@ -24,7 +24,7 @@ export default function Content() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        db.collection('1').onSnapshot((snapshot) => 
+        db.collection('1').orderBy("postedtime","desc").onSnapshot((snapshot) => 
             setPosts(snapshot.docs.map((doc) => ({id: doc.id, data: doc.data() } )))
         );
     }, []);
@@ -55,7 +55,7 @@ export default function Content() {
                 <PostArea/>
             </div>
             <div className="posts">
-            {posts.map(post => (<Post name = {post.data.posterName} img = {post.data.posterImg} text = {post.data.postText} postimg = {post.data.postImg} comments = {post.data.comments} shares = {post.data.shares} likes = {post.data.likes} loggedinuser = {userPic} date = {new Date(post.data.postedtime?.toDate()).toUTCString()}/>))}
+            {posts.map(post => (<Post key = {post.data.id} name = {post.data.posterName} img = {post.data.posterImg} text = {post.data.postText} postimg = {post.data.postImg} comments = {post.data.comments} shares = {post.data.shares} likes = {post.data.likes} loggedinuser = {userPic} date = {new Date(post.data.postedtime?.toDate()).toUTCString()}/>))}
                 
             </div>
         </div>

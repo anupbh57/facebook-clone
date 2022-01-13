@@ -17,7 +17,7 @@
 }
 .postarea__form{
     width: 90%;
-    margin: auto;
+    margin: auto 5px;
     height: 45px;
     border: none;
     border-radius: 20px;
@@ -26,6 +26,26 @@
     padding-left: 10px;;
 }
 .postarea__form::-webkit-input-placeholder {
+    font-size: 22px;
+}
+.postarea__button{
+    display: none;
+}
+form {
+    display: flex;
+    width: 100%;
+}
+.postarea__form_img{
+    width: 40%;
+    margin: auto 5px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background: #eff2f5;
+    font-size: 20px;
+    padding-left: 10px;;
+}
+.postarea__form_img::-webkit-input-placeholder {
     font-size: 22px;
 }
 .postarea__bottom {
