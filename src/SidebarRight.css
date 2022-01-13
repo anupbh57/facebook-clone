@@ -18,3 +18,14 @@
     border-bottom: solid 1px;
     border-color:rgb(197, 197, 197);
 }
+
+@media only screen and (max-width: 1280px) {
+    .sidebar__right {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 805px) {
+    .sidebar__right {
+        display: none;
+    }
+}
