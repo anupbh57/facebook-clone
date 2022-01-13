@@ -15,7 +15,7 @@ import DialpadIcon from '@mui/icons-material/Dialpad';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Nav() {
     return (
@@ -25,11 +25,16 @@ export default function Nav() {
                     className='logo' alt = "Main Logo"></img>
                 <Input id="input-with-icon-adornment" placeholder='Search facebook'
                     startAdornment={
-                        <InputAdornment
-                    position="start" ><SearchIcon/></InputAdornment>
+                        <InputAdornment id = "asd"
+                    position="start" ><SearchIcon  /></InputAdornment>
+                    
                     }/>
+                    <div className='responsive__search_ico'><SearchIcon/></div>
+                    <div className='responsive__navmenu_ico'><MenuIcon/></div>
             </div>
+            
             <div className='nav__middle'>
+                
                 <div className='nav__ico active'><HomeOutlinedIcon/></div>
                 <div className='nav__ico'><TvOutlinedIcon/></div>
                 <div className='nav__ico'><StorefrontIcon/></div>

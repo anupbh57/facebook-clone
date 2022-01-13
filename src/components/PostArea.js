@@ -24,7 +24,7 @@ export default function PostArea(){
             postImg: image,
             postText: text,
             postedtime: firebase.firestore.FieldValue.serverTimestamp(),
-            posterImg: "https://firebasestorage.googleapis.com/v0/b/facebook-clone-9021a.appspot.com/o/001.jpeg?alt=media&token=df869156-209b-4176-9476-27d1291cd3c1",
+            posterImg: "https://firebasestorage.googleapis.com/v0/b/facebook-clone-9021a.appspot.com/o/usericon.png?alt=media&token=24e3ac32-a0bf-49ff-8fde-0b4a42b63b61",
             postid: Math.floor(Math.random() * 1000) + 1,
             posterName: "Anup Bhandari",
             comments: Math.floor(Math.random() * 100) + 1,

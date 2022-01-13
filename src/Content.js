@@ -30,26 +30,28 @@ export default function Content() {
     }, []);
 
 {posts.map(post => (<Post name = {post.data.posterName} img = {post.data.posterImg}/>))}
-
+useEffect(() => {
+    document.title = "Facebook clone"
+ }, []);
     return (
         <div className="content">
             <div className="story__deck">
                 <AddStory img={userPic}/>
-                <StoryCard name="Steve Dodson"
+                <div className="story__deck_card"><StoryCard name="Steve Dodson"
                     img={story1}
-                    profileP={user1}/>
-                <StoryCard name="Melinda Roach"
+                    profileP={user1}/></div>
+                <div className="story__deck_card"><StoryCard name="Melinda Roach"
                     img={story2}
-                    profileP={user2}/>
-                <StoryCard name="Nathan O'Connor"
+                    profileP={user2}/></div>
+                <div className="story__deck_card"><StoryCard name="Nathan O'Connor"
                     img={story3}
-                    profileP={user3}/>
-                <StoryCard name="Kathryn Rich"
+                    profileP={user3}/></div>
+                <div className="story__deck_card"><StoryCard name="Kathryn Rich"
                     img={story4}
-                    profileP={user4}/>
-                <StoryCard name="Belinda Young"
+                    profileP={user4}/></div>
+                <div className="story__deck_card"><StoryCard name="Belinda Young"
                     img={story5}
-                    profileP={user5}/>
+                    profileP={user5}/></div>
             </div>
             <div className="post__area">
                 <PostArea/>
